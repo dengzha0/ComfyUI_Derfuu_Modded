@@ -100,18 +100,27 @@ class PowNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Value": Field.float(),
-                "Exponent": Field.float(),
+                "width": Field.int(),
+                "height": Field.int(),
+                "max_length": Field.int(default=1024),
             },
         }
 
-    RETURN_TYPES = ("FLOAT",)
-    FUNCTION = "pow"
+    RETURN_TYPES = ("INT","INT",)
+    RETURN_NAMES = ("WIDTH", "HEIGHT")
+    FUNCTION = "max_side"
     CATEGORY = TREE_MATH
 
-    def pow(self, Value, Exponent):
-        total = math.pow(Value, Exponent)
-        return (total,)
+    def max_side(self, width, height, max_length):
+        if width > height:
+            ratio = height / width
+            width = max_length
+            height = int(ratio * width)
+        else:
+            ratio = width / height
+            height = max_length
+            width = int(ratio * height)
+        return (width,height,)
 
 
 class SquareRootNode:
