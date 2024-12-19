@@ -12,8 +12,8 @@ class MultiplyNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Value": Field.float(),
-                "Multiplier": Field.int(),
+                "Value": Field.int(),
+                "Multiplier": Field.float(),
             },
         }
 
