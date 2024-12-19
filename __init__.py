@@ -48,7 +48,7 @@ NODE_CLASS_MAPPINGS = {
     _n("Subtract"): SMath.SubtractNode,
     _n("Multiply"): SMath.MultiplyNode,
     _n("Divide"): SMath.DivideNode,
-    _n("Power"): SMath.PowNode,
+    _n("KeepRatio"): SMath.PowNode,
     _n("Square_root"): SMath.SquareRootNode,
     _n("Sinus"): TMath.SinNode,
     _n("Cosines"): TMath.CosNode,
