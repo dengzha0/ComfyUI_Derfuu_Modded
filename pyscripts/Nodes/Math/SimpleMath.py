@@ -12,17 +12,17 @@ class MultiplyNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Value_A": Field.float(),
-                "Value_B": Field.float(),
+                "Value": Field.float(),
+                "Multiplier": Field.int(),
             },
         }
 
-    RETURN_TYPES = ("FLOAT",)
+    RETURN_TYPES = ("INT",)
     FUNCTION = "multiply"
     CATEGORY = TREE_MATH
 
     def multiply(self, Value_A, Value_B):
-        total = float(Value_A * Value_B)
+        total = int(Value_A * Value_B)
         return (total,)
 
 
@@ -34,17 +34,17 @@ class DivideNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Numerator": Field.float(),
-                "Denominator": Field.float(),
+                "Value": Field.int(),
+                "Divisor": Field.float(),
             },
         }
 
-    RETURN_TYPES = ("FLOAT",)
+    RETURN_TYPES = ("INT",)
     FUNCTION = "divide"
     CATEGORY = TREE_MATH
 
     def divide(self, Numerator, Denominator):
-        total = float(Numerator / Denominator)
+        total = int(Numerator / Denominator)
         return (total,)
 
 
@@ -56,17 +56,17 @@ class SumNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Value_A": Field.float(),
-                "Value_B": Field.float(),
+                "Value_A": Field.int(),
+                "Value_B": Field.int(),
             },
         }
 
-    RETURN_TYPES = ("FLOAT",)
+    RETURN_TYPES = ("INT",)
     FUNCTION = "sum"
     CATEGORY = TREE_MATH
 
     def sum(self, Value_A, Value_B):
-        total = float(Value_A + Value_B)
+        total = int(Value_A + Value_B)
         return (total,)
 
 
@@ -78,17 +78,17 @@ class SubtractNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "Value_A": Field.float(),
-                "Value_B": Field.float(),
+                "Value_A": Field.int(),
+                "Value_B": Field.int(),
             },
         }
 
-    RETURN_TYPES = ("FLOAT",)
+    RETURN_TYPES = ("INT",)
     FUNCTION = "sub"
     CATEGORY = TREE_MATH
 
     def sub(self, Value_A, Value_B):
-        total = float(Value_A - Value_B)
+        total = int(Value_A - Value_B)
         return (total,)
 
 
