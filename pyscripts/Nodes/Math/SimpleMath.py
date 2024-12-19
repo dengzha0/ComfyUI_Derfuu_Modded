@@ -21,8 +21,8 @@ class MultiplyNode:
     FUNCTION = "multiply"
     CATEGORY = TREE_MATH
 
-    def multiply(self, Value_A, Value_B):
-        total = int(Value_A * Value_B)
+    def multiply(self, Value, Multiplier):
+        total = int(Value * Multiplier)
         return (total,)
 
 
@@ -43,8 +43,8 @@ class DivideNode:
     FUNCTION = "divide"
     CATEGORY = TREE_MATH
 
-    def divide(self, Numerator, Denominator):
-        total = int(Numerator / Denominator)
+    def divide(self, Value, Divisor):
+        total = int(Value / Divisor)
         return (total,)
 
 
