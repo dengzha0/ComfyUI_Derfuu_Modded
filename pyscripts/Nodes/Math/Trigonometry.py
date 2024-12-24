@@ -12,24 +12,20 @@ class SinNode:
     def INPUT_TYPES(self):
         return {
             "required": {
-                "value": Field.float(),
-                "type_": Field.combo(["RAD", "DEG"]),
-                "arcSin": Field.combo([False, True])
+                "value_a": Field.int(),
+                "value_b": Field.int()
             }
         }
 
-    RETURN_TYPES = ("FLOAT",)
+    RETURN_TYPES = ("INT",)
     FUNCTION = "get_value"
     CATEGORY = TREE_TRIGONOMETRY
 
-    def get_value(self, value, type_="RAD", arcSin=False):
-        if type_ == "DEG":
-            value = math.radians(value)
-        if arcSin == True:
-            value = math.asin(value)
+    def get_value(self, value_a, value_b):
+        if value_a > value_b
+            return (value_a,)
         else:
-            value = math.sin(value)
-        return (value,)
+            return (value_b,)
 
 
 class CosNode:
