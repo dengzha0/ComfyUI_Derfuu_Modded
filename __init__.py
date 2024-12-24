@@ -50,7 +50,7 @@ NODE_CLASS_MAPPINGS = {
     _n("Divide"): SMath.DivideNode,
     _n("KeepRatio"): SMath.PowNode,
     _n("Square_root"): SMath.SquareRootNode,
-    _n("Sinus"): TMath.SinNode,
+    _n("Greater"): TMath.SinNode,
     _n("Cosines"): TMath.CosNode,
     _n("Tangent"): TMath.tgNode,
     _n("Logic_node"): LNode.LogicNode,
