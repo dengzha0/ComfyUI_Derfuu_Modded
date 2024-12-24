@@ -23,7 +23,7 @@ class SinNode:
 
     def get_value(self, value_a, value_b):
         greater = 0
-        if value_a > value_b
+        if value_a > value_b:
             greater = value_a    
         else:
             greater = value_b
