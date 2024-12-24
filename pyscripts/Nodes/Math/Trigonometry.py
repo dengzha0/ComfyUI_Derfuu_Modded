@@ -22,10 +22,12 @@ class SinNode:
     CATEGORY = TREE_TRIGONOMETRY
 
     def get_value(self, value_a, value_b):
+        greater = 0
         if value_a > value_b
-            return (value_a,)
+            greater = value_a    
         else:
-            return (value_b,)
+            greater = value_b
+        return (greater,)
 
 
 class CosNode:
