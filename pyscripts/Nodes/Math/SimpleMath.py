@@ -91,7 +91,7 @@ class SubtractNode:
         total = int(Value_A - Value_B)
         return (total,)
 
-
+# changed to new node KeepRatio
 class PowNode:
     def __init__(self) -> None:
         pass
