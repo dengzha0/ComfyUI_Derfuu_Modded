@@ -51,7 +51,7 @@ NODE_CLASS_MAPPINGS = {
     _n("KeepRatio"): SMath.PowNode,
     _n("Square_root"): SMath.SquareRootNode,
     _n("Greater"): TMath.SinNode,
-    _n("Cosines"): TMath.CosNode,
+    _n("SizeFilter"): TMath.CosNode,
     _n("Tangent"): TMath.tgNode,
     _n("Logic_node"): LNode.LogicNode,
     _n("Latent_Scale_by_ratio"): St_LatentNodes.LatentScale_Ratio,
