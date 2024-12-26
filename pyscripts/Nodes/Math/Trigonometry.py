@@ -40,8 +40,8 @@ class CosNode:
             "required": {
                 "width": Field.int(),
                 "height": Field.int(),
-                "small_size": Field.int(),
-                "big_size": Field.int()
+                "small_size": Field.int(default=600),
+                "big_size": Field.int(default=1200)
             }
         }
 
